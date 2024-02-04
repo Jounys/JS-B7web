@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+
+        button {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .white{
+            background-color: #fff;
+            color: black;
+        }
+        .Outra {
+            background-color: rgba(0, 0, 0, 0.89);
+        }
+
+        /* .outraClass:hover, .Outra:hover{
+            box-shadow: 0px 0px 20px 5px black;
+        } */
+    </style>
+</head>
+<body class="white">
+    <head>
+        <h1>Mudando a cor do tema</h1>
+    </head>
+    <button class="botao white" onclick="Clique()">Black</button>
+
+    <script>
+        function Clique(){
+            const button = document.querySelector('body')
+            const botao = document.querySelector('.botao')
+
+            if(button.classList.contains('white')){ // contains verifica se tem os elementos
+                button.classList.replace('white', 'Outra') // replace faz uma simples troca
+                botao.innerText = 'White'
+            } else {
+                button.classList.replace('Outra', 'white')
+                botao.innerText = 'Black'   
+            }
+            
+
+            // button.classList.toggle('outraClass') // Alterna entre uma classe e outra.
+
+            // button.classList.add('terceiraClass')
+            // button.classList.remove('outraClass')
+
+            // if (button.classList.contains('outraClass')){
+            //     button.classList.remove('outraClass')
+            //     button.classList.add('MaisUmaClass')
+            // } else {
+            //     button.classList.add('outraClass')
+            //     button.classList.remove('MaisUmaClass')
+            // }
+        }
+    </script>
+</body>
+</html>

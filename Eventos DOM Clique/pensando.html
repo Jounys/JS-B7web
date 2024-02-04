@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstrar senha</title>
+</head>
+<body>
+    <h1>Olá, Mundo</h1>
+    <div id="teste01">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </div>
+    <div id="teste02">
+        <ul>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+    <input type="password" placeholder="Digite sua senha" id="senha" name="algo">
+    <button class="Botao" onclick="Clique()">Mostrar senha</button>
+
+    <script>
+        function Clique(){
+            const input = document.querySelector('input')
+            const botao = document.querySelector('.Botao')
+
+            if (input.type === 'password'){
+                input.type = 'text'
+                botao.innerText = 'Ocultar senha'
+            } else {
+                input.type = 'password'
+                botao.innerText = 'Mostrar senha'
+            }  
+        }
+            // input.setAttribute('type', 'text')
+
+            // setattribute subistitui os atributos
+
+            // input.setAttribute('placeholder', 'OI, MUDEI!')
+
+            // hasAttribute verifica os elementos do código. getAttribute pega os atributos
+
+            // if(input.hasAttribute('placeholder')){
+            //     console.log('Tem PlaceHolder Sim')
+            // } else {
+            //     console.log('Não tem PlaceHolder')
+            // }
+    </script>
+</body>
+</html>

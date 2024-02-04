@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de teclas</title>
+</head>
+<body>
+    <h1>Descobrindo qual tecla é usada</h1>
+    <input type="text" name="" id="" placeholder="Digite">
+    <p></p>
+    <script>
+        const input = document.querySelector('input')
+        let p = document.querySelector('p')
+        // function apertou(){
+        //     console.log('Apertou')
+        // }
+
+        // function segurou(){
+        //     console.log('Segurou')
+        // }
+
+        function soltou(bla){
+            console.log(bla.shiftKey)
+            p.innerHTML = 'Você apertou a tecla: ' + bla.shiftKey
+            console.log('Você apertou a tecla: ' + bla.code)
+        }
+
+
+        input.addEventListener('keyup', soltou)
+
+        // code no argumento(parametro) consigo saber qual tecla foi apertada espeficicamente
+        // key tbm consigo saber qual tecla foi apertada
+        // shiftKey um valor boleano (True or False) verifica se a tecla shift foi apertada com conjunto com outra
+        // ctrltKey um valor boleano (True or False) verifica se a tecla shift foi apertada com conjunto com outra
+        // alttKey um valor boleano (True or False) verifica se a tecla shift foi apertada com conjunto com outra
+        
+    </script>
+</body>
+</html>

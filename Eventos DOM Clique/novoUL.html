@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Mudando o Documento com JavaScript</h1>
+    <div id="teste">
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+        </ul>
+    </div>
+    <button onclick="clique()">Clique</button>
+    <script>
+        
+        function clique(){
+            const teste = document.querySelector('#teste')
+            const ul = teste.querySelector('ul')
+
+            let novoUl = document.createElement('ul')
+
+            for(let i = 1; i <= 5; i++){
+                let novoLi = document.createElement('li')
+                novoLi.innerHTML = 'Lista ' + i //(1 + i)
+                novoUl.append(novoLi)
+            }
+            ul.after(novoUl)
+        }
+    </script>
+</body>
+</html>

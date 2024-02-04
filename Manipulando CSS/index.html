@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="teste01">
+        <ul>
+            <li>Teste 01</li>
+            <li>Teste 02</li>
+        </ul>
+    </div>
+        <div id="teste02">
+        <ul>
+            <li>Teste 03</li>
+            <li>Teste 04</li>
+        </ul>
+    </div>
+    <button class="botao" onclick="Clique()">Mudar</button>
+
+    <script>
+        function Clique(){
+            const li = document.querySelector('li')
+            li.style.background = 'red'
+            li.style.fontSize = '30px'
+            li.style.width = '200px'
+            li.style.height = '100px'
+            li.style.border = '1px solid black'
+        }
+    </script>
+</body>
+</html>

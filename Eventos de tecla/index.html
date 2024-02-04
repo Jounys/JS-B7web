@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de teclas</title>
+</head>
+<body>
+    <input type="text" name="" id="" placeholder="Digite" onkeydown="segurou()" onkeypress="segurou()" onkeyup="soltou()">
+    <script>
+        const botao = document.querySelector('input')
+        function apertou(){
+            botao.style.background = 'red'
+            console.log('Apertou')
+        }
+
+        function segurou(){
+            console.log('Segurou')
+            botao.style.background = 'blue'
+        }
+
+        function soltou(){
+            console.log('Soltou')
+            botao.style.background = 'green'
+        }
+
+        // document.addEventListener('keydown', apertou)
+        // document.addEventListener('keypress', segurou)
+        // document.addEventListener('keyup', soltou)
+        
+    </script>
+</body>
+</html>

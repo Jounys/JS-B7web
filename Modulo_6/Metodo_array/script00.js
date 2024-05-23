@@ -1,7 +1,7 @@
-// let lista = ['ovo', 'farinha', 'manteiga', 'chocolate']
+let lista = ['ovo', 'farinha', 'manteiga', 'chocolate']
 
-// lista.splice(0, 4)
-// console.log(lista)
+lista.splice(3, 1)
+console.log(lista)
 
 // lista[ lista.length ] = 'leite condensado';
 /*
@@ -17,7 +17,7 @@
     pop(), remove o ultimo item do array
     shift(), remove o primeiro item do array
     push(), adiciona item ao array
-    splice(posição, quantidade), remove do array com o parametro de posição e quantidade
+    splice(posição, quantidade), remove do array apartir de uma posição e a quantidade
     [], adiciona na posição espeficada, podendo tambem usar para susbituir
 
     push(): Adiciona um ou mais elementos ao final do array.
@@ -64,9 +64,9 @@
 
 
 
-    let abc = ['A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z']
+// let abc = ['A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z']
 
-    let a = abc.toString()
+// let a = abc.toString()
 
-    let ab = a.split(', ')
-    console.log(ab)
+// let ab = a.split(', ')
+// console.log(ab)
